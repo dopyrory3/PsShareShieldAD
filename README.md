@@ -8,6 +8,8 @@ In a future release the password will have in-module or shareshield-generated pa
 
 ## Installation
 ```powershell
+# The module depends on PsShareShield, so you need to install it first
+Install-Module -Name PsShareShield
 Install-Module -Name PsShareShieldAD
 ```
 
