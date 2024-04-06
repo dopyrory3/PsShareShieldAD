@@ -32,7 +32,8 @@ Get-ChildItem -Filter ".\ADUC\Reset-PasswordWithShareShield.*" | ForEach-Object 
 
 .\Register-AducContextMenu.ps1
 ```
-
+![alt text](/screenshots\1.png)
+![alt text](/screenshots/2.png)
 ## License
 MIT
 
