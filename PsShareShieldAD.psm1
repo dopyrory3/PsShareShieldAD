@@ -38,8 +38,12 @@ function Reset-ADUserPassword {
                 Set-ADAccountPassword -Identity $username -NewPassword $password -Reset
                 $reset = $true
             }
-            catch {
+            catch [Microsoft.ActiveDirectory.Management.ADPasswordComplexityException] {
                 $reset = $false
+            }
+            catch [System.UnauthorizedAccessException] {
+                Write-Error "Access denied to reset password for $username"
+                return
             }
         } until ($reset -eq $true)
 
