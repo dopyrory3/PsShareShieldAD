@@ -1,5 +1,9 @@
 # PsShareShieldAD
 
+**IMPORTANT**
+This module depends on PsShareShield, which is a module that is not available in the PowerShell Gallery. Please see the repo for that module here: https://github.com/dopyrory3/PsShareShield
+
+
 ## Description
 PsShareShieldAD is a PowerShell made to integrate PsShareShield with Active Directory.
 It exposes a new cmdlet that allows you to quickly reset a password and generate a link using ShareShield.
